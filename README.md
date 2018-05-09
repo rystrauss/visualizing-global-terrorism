@@ -1,1 +1,2 @@
-# visualizing-global-terrorism
+# Visualizing Global Terrorism
+

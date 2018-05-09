@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Final Project</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/final-project.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+</head>
+<body>
+<div class="row">
+    <div class="col-10 offset-1">
+        <h1>World Terrorist Attacks</h1>
+        <h3>1970 - 2016</h3>
+        <h5>Avery Kerwin and Ryan Strauss</h5>
+    </div>
+</div>
+<div class="row">
+    <div class="col-10 offset-1">
+        <p>This visualization investigates global terrorism from 1970 to 2016. Each dot represents a terrorist attack in
+            which there was at least one victim. The size of each dot is proportional to the number of victims: the
+            largest and smallest points represent 1,500 and 1 people respectively. The color of each dot corresponds to
+            one of eight attack types. The data can be filtered by year and by type of attack so that only the desired
+            points are displayed. Updating the years will also update the line chart. Use the "Animate" button to see
+            the evolution of attacks over the selected time period. The map can be navigated by clicking and dragging as
+            well as scrolling to zoom. The color scale is uniform throughout all three visualizations.</p>
+    </div>
+</div>
+<div id="container"></div>
+<div class="row">
+    <div class="col-7 offset-1">
+        <form onsubmit="return false;" method="post" id="yearRange">
+            Start Year:
+            <input type="text" id="startYear" value="1970">
+            End Year:
+            <input type="text" id="endYear" value="2016">
+            <input type="submit" value="Update">
+        </form>
+    </div>
+    <div class="col-2">
+        <p>Current Year: <span id="cYear"></span></p>
+    </div>
+    <div class="col-1">
+        <button id="animate" type="button">Animate</button>
+    </div>
+</div>
+<div class="row">
+    <div id="legend-column" class="col-3 offset-1">
+        <svg id="legend" width="300" height="300"></svg>
+    </div>
+    <div class="col-2">
+        <svg id="legendSize" width="200" height="300"></svg>
+    </div>
+    <div class="col-5">
+        <div id="AttackDiv" class="radio-toolbar">
+            <p><b>Attack Type</b></p>
+        </div>
+    </div>
+</div>
+<div align="center">
+    <svg id="line-chart" width="960" height="900"></svg>
+</div>
+<div align="center">
+    <svg id="bar-chart" width="960" height="900"></svg>
+</div>
+<script src="assets/js/jquery-3.2.1.min.js"></script>
+<script src="assets/js/tether.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+<script src="assets/js/d3.v4.js"></script>
+<script src="assets/js/topojson.v2.js"></script>
+<script src="assets/js/final-project.js"></script>
+<script src="assets/js/d3-legend.js"></script>
+</body>
+</html>
