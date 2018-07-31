@@ -1,3 +1,92 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+
+body {
+    font-family: "Roboto", "Arial", sans-serif;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    color: #343434;
+}
+
+button {
+    background-color: #cae6fa;
+    border: solid 1px #343434;
+    border-radius: 5px;
+    padding: 5px 20px;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #bad4e8;
+}
+
+input {
+    font-size: 16px;
+    border: none;
+    border-bottom: solid 0.5px #343434;
+}
+
+input:focus {
+    outline: none;
+}
+
+label {
+    font-weight: bold;
+}
+
+.page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 12%;
+}
+
+.row {
+    width: 100%;
+    display: flex;
+}
+
+.header {
+    flex-direction: column;
+}
+
+.title {
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.subtitle {
+    font-size: 22px;
+    font-style: italic;
+}
+
+.interactive {
+    display: flex;
+    flex-direction: column;
+}
+
+.yearForm {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.legends {
+    justify-content: center;
+    margin: 40px 0;
+    align-items: flex-start;
+}
+
+.sizeLegend {
+    margin: 0 20px;
+}
+
+.field {
+    margin-right: 20px;
+}
+
 .country:hover {
     stroke: black;
     stroke-opacity: 0.6;
@@ -10,12 +99,13 @@
 }
 
 #container {
-    margin: 10px 10%;
+    margin: 30px 0;
     border: 2px solid #000;
     border-radius: 5px;
     height: 100%;
+    width: 100%;
     overflow: hidden;
-    background: #b5d5ff;
+    background: #cae6fa;
 }
 
 .hidden {
@@ -57,11 +147,9 @@ div.tooltip {
 
 #AttackDiv {
     width: 100%;
-    background-color: #deebf7;
-}
-
-.row {
-    margin: 30px 0;
+    height: 100%;
+    background-color: #d7d8fc;
+    padding: 15px;
 }
 
 #legend-column {
